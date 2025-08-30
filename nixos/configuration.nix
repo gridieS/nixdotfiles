@@ -56,7 +56,6 @@
     home-manager
     dconf
     gnome-extension-manager
-    gh
 
     gnomeExtensions.clipboard-history
     gnomeExtensions.search-light

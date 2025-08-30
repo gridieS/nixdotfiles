@@ -11,9 +11,8 @@
     pkgs.alacritty
     pkgs.beeper
     pkgs.vesktop
-    pkgs.firefoxpwa
     pkgs.vscode
-
+    pkgs.firefoxpwa
   ];
 
   programs.firefox = {
@@ -32,7 +31,10 @@
     userName = "gridieS";
     userEmail = "gridieworks@gmail.com";
   };
-  
+  programs.gh = {
+    enable = true;
+    gitCredentialHelper.enable = true;
+  };
 
   dconf.settings = {
     "org/gnome/desktop/input-sources" = {
