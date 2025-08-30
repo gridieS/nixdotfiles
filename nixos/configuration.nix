@@ -49,7 +49,6 @@
 
   programs.nano.enable = false;
   environment.systemPackages = with pkgs; [
-    firefox
     vim
     wget
     flatpak
@@ -64,7 +63,6 @@
     gnomeExtensions.space-bar
     gnomeExtensions.tray-icons-reloaded
   ];
-  programs.firefox.nativeMessagingHosts.packages = [ pkgs.firefoxpwa ];
 
   system.stateVersion = "25.05"; # NixOS package versions
 
