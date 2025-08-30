@@ -16,7 +16,14 @@
 
   ];
 
-    home.file.".config/alacritty/alacritty.toml".source = dotfiles/alacritty.toml;
+  programs.firefox = {
+    enable = true;
+    nativeMessagingHosts = [
+      pkgs.firefoxpwa
+    ];
+  };
+  
+  home.file.".config/alacritty/alacritty.toml".source = dotfiles/alacritty.toml;
 
   # Manage configuration for Git.
   programs.git = {
@@ -65,6 +72,12 @@
       switch-to-workspace-4 = [ "<Super>4" ];
       switch-to-workspace-5 = [ "<Super>5" ];
       switch-to-workspace-6 = [ "<Super>6" ];
+      move-to-workspace-1 = [ "<Shift><Super>1" ];
+      move-to-workspace-2 = [ "<Shift><Super>2" ];
+      move-to-workspace-3 = [ "<Shift><Super>3" ];
+      move-to-workspace-4 = [ "<Shift><Super>4" ];
+      move-to-workspace-5 = [ "<Shift><Super>5" ];
+      move-to-workspace-6 = [ "<Shift><Super>6" ];
       switch-input-source = [ "<Shift><Alt>" ];
       switch-input-source-backward = lib.gvariant.mkEmptyArray lib.gvariant.type.string;
       close = [ "<Super>u" ];
